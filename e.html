@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AFD Fire Department</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0f0f0f;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#ff4b4b;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+
+nav a:hover{
+color:#ff4b4b;
+}
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.85)),
+url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb");
+background-size:cover;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+margin-top:10px;
+opacity:.8;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+padding:14px 30px;
+margin:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.join{
+background:#ff4b4b;
+color:white;
+box-shadow:0 0 15px #ff4b4b;
+}
+
+.apply{
+border:1px solid #ff4b4b;
+color:white;
+}
+
+.btn:hover{
+transform:scale(1.07);
+}
+
+section{
+padding:90px 10%;
+text-align:center;
+}
+
+.section-title{
+font-size:35px;
+margin-bottom:10px;
+}
+
+.cards{
+margin-top:40px;
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:#121212;
+padding:35px;
+border-radius:10px;
+width:260px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 15px #ff4b4b55;
+}
+
+.card h3{
+color:#ff4b4b;
+margin-bottom:10px;
+}
+
+.staff-grid{
+margin-top:40px;
+display:flex;
+gap:40px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.staff{
+background:#121212;
+padding:25px;
+border-radius:10px;
+width:220px;
+}
+
+.staff img{
+width:80px;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+.rules{
+max-width:800px;
+margin:auto;
+text-align:left;
+margin-top:40px;
+}
+
+.rules p{
+margin:10px 0;
+}
+
+.form{
+max-width:600px;
+margin:auto;
+margin-top:30px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input, textarea{
+padding:12px;
+border:none;
+border-radius:6px;
+background:#151515;
+color:white;
+}
+
+.submit{
+background:#ff4b4b;
+border:none;
+padding:14px;
+border-radius:6px;
+font-weight:600;
+cursor:pointer;
+}
+
+.submit:hover{
+box-shadow:0 0 12px #ff4b4b;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#080808;
+opacity:.7;
+margin-top:50px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">AFD Fire Department</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#departments">Departments</a>
+<a href="#chiefs">Chiefs</a>
+<a href="#staff">Staff</a>
+<a href="#rules">Rules</a>
+<a href="#apply">Apply</a>
+<a href="https://discord.gg/TwEHqwgsEt">Discord</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>AFD Fire Department</h1>
+<p>Serving the community with honor, courage, and commitment.</p>
+
+<div class="buttons">
+
+<a class="btn join" href="https://discord.gg/TwEHqwgsEt">Join Discord</a>
+
+<a class="btn apply" href="#apply">Apply Now</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="departments">
+
+<h2 class="section-title">Departments</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Engine Operations</h3>
+<p>Fire suppression, rescue, and emergency response.</p>
+</div>
+
+<div class="card">
+<h3>Ladder Operations</h3>
+<p>Search, ventilation, and technical rescue support.</p>
+</div>
+
+<div class="card">
+<h3>EMS</h3>
+<p>Emergency medical care and transport.</p>
+</div>
+
+<div class="card">
+<h3>Training & Safety</h3>
+<p>Keep crews ready with drills, certification, and safety.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="chiefs">
+
+<h2 class="section-title">Chief Officers</h2>
+
+<div class="staff-grid">
+
+<div class="staff">
+<img src="https://i.pravatar.cc/105">
+<h3>Fire Chief</h3>
+<p>Overall command and strategic leadership.</p>
+</div>
+
+<div class="staff">
+<img src="https://i.pravatar.cc/106">
+<h3>Deputy Chief</h3>
+<p>Operations oversight and incident command support.</p>
+</div>
+
+<div class="staff">
+<img src="https://i.pravatar.cc/107">
+<h3>Assistant Chief</h3>
+<p>Training, safety, and department readiness.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="staff">
+
+<h2 class="section-title">Staff Team</h2>
+
+<div class="staff-grid">
+
+<div class="staff">
+<img src="https://i.pravatar.cc/100">
+<h3>Captain</h3>
+<p>Station leadership and crew coordination.</p>
+</div>
+
+<div class="staff">
+<img src="https://i.pravatar.cc/101">
+<h3>Lieutenant</h3>
+<p>Shift supervision and tactical decisions.</p>
+</div>
+
+<div class="staff">
+<img src="https://i.pravatar.cc/102">
+<h3>Engineer</h3>
+<p>Apparatus operation and equipment maintenance.</p>
+</div>
+
+<div class="staff">
+<img src="https://i.pravatar.cc/103">
+<h3>Firefighter</h3>
+<p>Front-line response and rescue.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="rules">
+
+<h2 class="section-title">Department Rules</h2>
+
+<div class="rules">
+
+<p><b>1.</b> Safety is the top priority—always.</p>
+<p><b>2.</b> Follow chain of command and radio discipline.</p>
+<p><b>3.</b> Maintain professionalism on and off duty.</p>
+<p><b>4.</b> Train regularly and stay prepared.</p>
+<p><b>5.</b> Support teammates and the community.</p>
+
+</div>
+
+</section>
+
+<section id="apply">
+
+<h2 class="section-title">Applications</h2>
+
+<form class="form" id="applicationForm">
+
+<input type="text" id="discordUsername" placeholder="Discord Username (e.g. Name#1234)" required>
+
+<input type="text" id="discordId" placeholder="Discord ID (numeric)" required>
+
+<input type="text" id="age" placeholder="Age" required>
+
+<input type="text" id="role" placeholder="Role Applying For" required>
+
+<textarea id="why" placeholder="Why do you want to join AFD?" rows="5" required></textarea>
+
+<button class="submit" type="button" id="submitBtn">Submit Application</button>
+
+<div id="formMessage" style="margin-top:12px; font-size:0.9rem; opacity:0.9;"></div>
+
+</form>
+
+</section>
+
+<footer>
+
+© 2026 AFD Fire Department — All Rights Reserved
+
+</footer>
+
+<script>
+// ---- CONFIGURE THIS ----
+const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1481475110249562276/EwGzVBQMmiEhiDwKl_dy6RYA08GZxRUJhFKRwMf48BNw15qdtQAcb17J6kt9s1lLmtLF"; // Created in channel 1457100845572292700.
+const DISCORD_CHANNEL_ID = "1457100845572292700"; // For your reference; the webhook must be created in this channel.
+// ------------------------
+
+const form = document.getElementById('applicationForm');
+const submitBtn = document.getElementById('submitBtn');
+const messageDiv = document.getElementById('formMessage');
+
+function setMessage(text, success = true) {
+  messageDiv.textContent = text;
+  messageDiv.style.color = success ? '#a8ff9e' : '#ff6b6b';
+}
+
+async function submitApplication() {
+  const username = document.getElementById('discordUsername').value.trim();
+  const discordId = document.getElementById('discordId').value.trim();
+  const age = document.getElementById('age').value.trim();
+  const role = document.getElementById('role').value.trim();
+  const why = document.getElementById('why').value.trim();
+
+  if (!username || !discordId || !age || !role || !why) {
+    setMessage('Please fill in all fields before submitting.', false);
+    return;
+  }
+
+  if (!DISCORD_WEBHOOK_URL || DISCORD_WEBHOOK_URL.includes('YOUR_DISCORD_WEBHOOK_URL_HERE')) {
+    setMessage('Webhook URL not configured. Update the script with your Discord webhook URL.', false);
+    return;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
+
+  const payload = {
+    username: 'AFD Application Bot',
+    avatar_url: 'https://i.imgur.com/0KFBHTB.png',
+    content: `New application from **${username}** (ID: ${discordId})`,
+    embeds: [
+      {
+        title: 'New Application Received',
+        color: 16711680,
+        fields: [
+          { name: 'Discord Username', value: username, inline: true },
+          { name: 'Discord ID', value: discordId, inline: true },
+          { name: 'Age', value: age, inline: true },
+          { name: 'Role Applying For', value: role, inline: false },
+          { name: 'Why do you want to join?', value: why, inline: false }
+        ],
+        footer: { text: `Channel ID: ${DISCORD_CHANNEL_ID}` },
+        timestamp: new Date().toISOString()
+      }
+    ],
+    components: [
+      {
+        type: 1,
+        components: [
+          {
+            type: 2,
+            style: 3,
+            label: 'Accept',
+            custom_id: 'accept_application',
+            emoji: { name: '✅' }
+          },
+          {
+            type: 2,
+            style: 4,
+            label: 'Deny',
+            custom_id: 'deny_application',
+            emoji: { name: '❌' }
+          }
+        ]
+      }
+    ]
+  };
+
+  try {
+    const res = await fetch(DISCORD_WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    if (!res.ok) {
+      throw new Error(`Discord webhook returned ${res.status}`);
+    }
+
+    setMessage('Application sent! Check Discord for confirmation.');
+    form.reset();
+  } catch (err) {
+    console.error(err);
+    setMessage('Failed to send application. Check the webhook URL and your network.', false);
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Submit Application';
+  }
+}
+
+submitBtn.addEventListener('click', submitApplication);
+</script>
+
+</body>
+</html>
